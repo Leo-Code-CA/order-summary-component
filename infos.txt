@@ -1,0 +1,36 @@
+DIMENSIONS: 
+
+Desktop version: 
+
+Viewport: 1440x900
+Card: 452x700
+Card padding: 52px 50px
+Top image: 452x222
+Bottom part: 452x478
+Between title and paragraph: 24px
+Between paragraph and annual plan: 23px
+Annual plan part: 355x100
+Annual plan part padding: 23px
+Music logo: 50x50
+Between music logo and dl: 18px
+Between annual plan and button: 30px
+Between dl and change: 93px
+Button: 355x50
+Between button and cancel: 34px
+
+Mobile version: 
+
+Viewport: 375×709 // good
+Card: 327x567 // good
+Card padding: 38px 24px 37px // good
+Top image: 327x160 // good
+Bottom part: 327x407 // good
+Annual plan part: 279x81 // good
+Annual plan part padding: 17px 15px 16px 16px // good
+Music logo: 48x48 // good
+Button: 279x50 // good
+Between title and paragraph: 24px // good 
+
+Useful links:
+
+https://www.tutorialspoint.com/Which-HTML5-tags-are-more-appropriate-to-represent-money-amount#:~:text=If%20you%20want%20to%20emphasise,with%20a%20class.
