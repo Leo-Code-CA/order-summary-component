@@ -2,20 +2,20 @@ DIMENSIONS:
 
 Desktop version: 
 
-Viewport: 1440x900
-Card: 452x700
-Card padding: 52px 50px
-Top image: 452x222
-Bottom part: 452x478
-Between title and paragraph: 24px
+Viewport: 1440x900 // good
+Card: 450x697 // good
+Top image: 450x220 // good
+Bottom part: 450x477 // good 
+Card padding: 53px 48px // good
+Button: 354x50  // good
+Annual plan part: 354x98 // good
+Annual plan part padding: 25px // good
+Music logo: 48x48 // good
+Between title and paragraph: 24px 
 Between paragraph and annual plan: 23px
-Annual plan part: 355x100
-Annual plan part padding: 23px
-Music logo: 50x50
 Between music logo and dl: 18px
 Between annual plan and button: 30px
 Between dl and change: 93px
-Button: 355x50
 Between button and cancel: 34px
 
 Mobile version: 
