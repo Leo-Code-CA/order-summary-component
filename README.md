@@ -1,91 +1,95 @@
-# Frontend Mentor - Order summary card
+# Frontend Mentor - Order summary card solution
 
-![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./images/mysolution-order-summary-component.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/order-summary-component-challenge-solution-using-float-only-K3aTK70CpG)
+- Live Site URL: [Live site URL](https://leo-code-ca.github.io/order-summary-component/)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- CSS float only (no flexbox, no CSS grid)
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+For this project, I decided to challenge myself with the rule of building this order summary WITHOUT using CSS grid or flexbox! That’s what I did and instead, I only used CSS float. It was neither the easiest nor the fastest way to build the project but I'm glad I did it that way because I’ve really started to get used to flexbox and CSS grid and even if those are amazing tools, I still want to be able to achieve what I want differently. 
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+```css
+.change {
+    float: left;
+}
 
-## Deploying your project
+.payment {
+    clear: left;
+}
+```
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+I also tried to be even more accurate, about the dimensions of the different elements I styled, that I've been in my previous "reproduction" projects. It took me a lot of time and I'm not sure yet if it was worth the effort but I’m glad I experimented that.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```css
+.payment {
+    height: 49px;
+}
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+.bottom {
+    padding: 3.8rem 2.4rem 3.7rem;
+    height: 407px;
+}
+```
 
-## Create a custom `README.md`
+Finally, I'm pretty happy of my box-shadows! I find them really hard to reproduce, especially when their opacity is very low so it's hard to see them very clearly but I still find the result decent.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+```css
+.payment {
+    box-shadow: 0px 15px 25px var(--b-b-tranparent1);
+}
+```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+### Continued development
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+I worked on a fun animation for the attribution paragraph. I definitively love gradients and I absolutely want to become better at creating them! About the animation itself, I first tried to kinda overlay my paragraph with another one which was totally similar. My idea was to apply a gradient on the second paragraph that overlays the first one and then create an animation which sets the width of this paragraph from 0 to 100%. To be honest it didn't work very well at all. 
 
-## Submitting your solution
+Then, I gave up the idea of creating two similar paragraphs and I kept only one. I discovered that the background size property is animatable! I tried it and it worked! Actually it’s way more straight forward than my first idea! I definitely need to become more knowledgeable on animatable properties, it would save me lots of time!
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+I think I also need to learn how to create better classes. When I say better, I mean more efficient, more reusable, more understandable. I'm not sure if there is a single good method to do that (if yes, I haven't found it yet!) but I try to improve myself on every project I build. My goal is to think about the classes I'd like to create before starting to code. Actually, I always end up modifying some of them along the way…
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+### Useful resources
 
-## Sharing your solution
+- [Correct HTML semantics](https://www.tutorialspoint.com/Which-HTML5-tags-are-more-appropriate-to-represent-money-amount#:~:text=If%20you%20want%20to%20emphasise,with%20a%20class.) - This article helped me to understand better what kind of HTML elements should be used to represent money amounts. It's really useful because before reading it, I didn’t have a clue what to use!
 
-There are multiple places you can share your solution:
+## Author
 
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+- Frontend Mentor - [@Leo-Code-CA](https://www.frontendmentor.io/profile/Leo-Code-CA)
+- FreeCodeCamp - [@Leo-code](https://www.freecodecamp.org/Leo-code)
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
